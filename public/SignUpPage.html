@@ -32,26 +32,31 @@
 </head>
 
 <body>
-    <nav class="lighten-1" role="navigation" style="background-color: white;opacity: 0.8">
+    <nav class="lighten-1" role="navigation" style="background-color: white">
         <div class="nav-wrapper container"><a id="logo-container" class="brand-logo"><img src="img/C_Logo.png" style="width: auto; max-width: 200px"></a>
 
             <!-- 메인메뉴 -->
             <ul class="right hide-on-med-and-down">
                 <li><a href="index.html" class="black-text">HOME</a></li>
+                <li><a class="dropdown-button" data-activates="dropdown1"><i class="material-icons" style="color: black">more_vert</i></a></li>
             </ul>
 
             <!-- 드롭다운 메뉴 -->
             <ul id="dropdown1" class="dropdown-content">
-                <li><a class="black-text"><strong>더 보기</strong></a></li>
-                <li class="divider"></li>
-            </ul>
+                    <li><a href="index.html" target="_blank" class="center">Home</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#" style="color: black">Tools</a></li>
+                    <li><a href="#">Null</a></li>
+                </ul>
 
             <!-- 모바일 메인 메뉴 -->
-            <ul id="nav-mobile" class="side-nav">
-                <li><a href="index.html">HOME</a></li>
-            </ul>
+           <ul id="nav-mobile" class="side-nav index_m_menu">
+                    <li><a href="index.html" target="_blank" class="center">Home</a></li>
+                    <li class="divider"></li>
+                    <li><a href="SignUpPage.html" style="color: black">SignUp</a></li>
+                </ul>
 
-            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+           <a href="#" data-activates="nav-mobile" class="button-collapse" style="color: black"><i class="material-icons">menu</i></a>
         </div>
     </nav>
     <div class="section no-pad-bot " id="index-banner">
@@ -63,16 +68,16 @@
                     <!-- 로그인박스 -->
                     <div class="card">
                         <div class="card-content">
-                            로그인 상태 :
-                            <!-- TODO 상태 보기용 span 추가-->
-                            <span id="AUTH_STATE" class="blue-text">(인증되지 않음)</span>
+                        <i id="AUTH_STATE_FACE" class="material-icons" style="font-size: 50px;color:coral; align-content: center; ">sentiment_very_dissatisfied</i><br>
+                            <span id="AUTH_STATE" class="blue-text material-icons">(인증되지 않은 사용자입니다.)</span>
                         </div>
                         <div class="card-action">
                             <button id="BTN_GOOGLE_LOGIN" type="button" class="btn indigo">Google Login</button>
                             <!-- TODO 로그아웃 버튼 -->
+                            
                             <!-- TODO 유저 정보 확인용 요소 추가 -->
                             <br><br><div class="row center">
-                                <a id="BTN_SIGNUP" type="button" class="btn-large waves-effect waves-light btn-my" href="MainPage.html" style="text-decoration-color: white">Get Started</a>
+                                <a id="BTN_SET_EQUIP" type="button" class="btn-large waves-effect waves-light btn-my" href="Mainpage.html" style="text-decoration-color: white; display:none">View My Equipment</a>
                             </div>
                         </div>
                     </div>

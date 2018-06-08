@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>SmartFarm-Easy Farm - Materialize</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <style media="screen">
+        body {
+            background: #eee;
+        }
+
+        #MY_NAME {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        #CONTENTS {
+            min-height: 700px;
+            margin-top: 20px;
+        }
+
+        .input-field input[type=text]:focus {
+            border-bottom: 1px solid #3f51b5 !important;
+            box-shadow: 0 1px 0 0 #3f51b5 !important;
+        }
+
+        #chartdiv {
+            width: 100%;
+            height: 500px;
+        }
+
+        #chartdiv1 {
+            width: 100%;
+            height: 500px;
+        }
+
+        .amcharts-export-menu-top-right {
+            top: 10px;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mycontainer">
+        <nav class="btn-my" style="background-color: white">
+            <div class="nav-wrapper container">
+                <a id="logo-container" href="index.html" class="brand-logo"><img src="img/C_Logo.png" style="width: auto; max-width: 200px"></a>
+
+                <ul class="right hide-on-med-and-down">
+                    <li><a id="BTN_LOGOUT" href="" style="color: black">Logout</a></li>
+                    <li><a class="dropdown-button" data-activates="dropdown1"><i class="material-icons" style="color: black">more_vert</i></a></li>
+                </ul>
+
+                <ul id="dropdown1" class="dropdown-content">
+                    <li><a href="index.html" target="_blank" class="center">Home</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#" style="color: black">Tools</a></li>
+                    <li><a href="#">Null</a></li>
+                </ul>
+
+                <ul id="nav-mobile" class="side-nav index_m_menu">
+                    <li><a href="index.html" target="_blank" class="center">Home</a></li>
+                    <li class="divider"></li>
+                    <li><a href="index.html" style="color: black">Logout</a></li>
+                </ul>
+                <a href="#" data-activates="nav-mobile" class="button-collapse" style="color: black"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+        <div class="section no-pad-bot" id="index-banner">
+            <div class="container">
+
+
+                <!-- HTML -->
+            
+                <div id="chartdiv1"></div>
+                <div id="chartdiv"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section">
+
+        </div>
+        <br><br>
+    </div>
+
+    <footer class="page-footer btn-my" style="background-color: white; opacity: 0.5;">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="black-text">Team No.3</h5>
+                    <p class="black-text text-lighten-4">2018 CapStone Design<br>ChosunUNIV Department of Information and Communication Engineering a class of 12 YAS</p>
+
+
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="black-text"></h5>
+                    <ul>
+                    </ul>
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="black-text">Special Thanks</h5>
+                    <ul>
+                        <li><a class="black-text" href="http://materializecss.com">Materialize</a></li>
+                        <li><a class="black-text" href="https://firebase.google.com/">Firebase</a></li>
+                        <li><a class="black-text" href="https://www.google.com/">Google</a></li>
+                        <li><a class="black-text" href="https://www.facebook.com/groups/codingeverybody/?ref=nf_target&fref=nf">생활코딩</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container black-text">
+                Made by <a class="black-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="js/SetEquip.js"></script>
+    <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script src="https://www.amcharts.com/lib/3/serial.js"></script>
+    <script src="https://www.amcharts.com/lib/3/gauge.js"></script>
+    <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+    <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/SetEquip.js"></script>
+    <script type="text/javascript">
+        $('.button-collapse').sideNav();
+        $(".dropdown-button").dropdown();
+    </script>
+
+</body>
+
+</html>

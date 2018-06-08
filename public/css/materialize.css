@@ -16,6 +16,19 @@
 .mytextshadow{
     text-shadow: 4px 2px 2px gray;
 }
+.index_m_menu{
+    opacity: 1 !importnant;
+    background-color: white !important;
+}
+.mybackImg{
+    position: absolute;
+    max-width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+}
 .mylogostyle{
     width: auto;
     max-width: 200px;
@@ -26,6 +39,43 @@
 .aligncenter_1{
     left: 50%;
     margin: auto !important;
+}
+.indexpagebox{
+    min-height: 400px;
+}
+.index_top_box_style{
+    border-style: solid;
+    border-width: 1px;
+    border-color: aqua;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-bottom: 5px;
+}
+.index_mid_box_style{
+    margin-top: 1px;
+    min-height: 120px;
+    max-height: 120px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: aqua;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+.index_bottom_box_style{
+    border-style: solid;
+    border-width: 1px;
+    border-color: aqua;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    min-height: 250px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
 }
 #uploader{
     -webkit-appearance: none;
@@ -3906,7 +3956,7 @@ input[type=range] + .thumb {
         right: auto;
     }
     .row .col.m4 {
-        width: 33.3333333333%;
+        width: 33.33333333333333%;
         margin-left: auto;
         left: auto;
         right: auto;

@@ -14,5 +14,8 @@
     "none"
   ],
   "author": "none",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "amcharts3": "^3.21.13"
+  }
 }
