@@ -1,0 +1,50 @@
+[debug] [2018-06-11T11:56:11.253Z] ----------------------------------------------------------------------
+[debug] [2018-06-11T11:56:11.256Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-06-11T11:56:11.256Z] CLI Version:   3.18.6
+[debug] [2018-06-11T11:56:11.256Z] Platform:      win32
+[debug] [2018-06-11T11:56:11.256Z] Node Version:  v9.8.0
+[debug] [2018-06-11T11:56:11.259Z] Time:          Mon Jun 11 2018 20:56:11 GMT+0900 (대한민국 표준시)
+[debug] [2018-06-11T11:56:11.259Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-06-11T11:56:11.276Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-06-11T11:56:11.276Z] > authorizing via signed-in user
+[debug] [2018-06-11T11:56:11.278Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-06-11T11:56:11.279Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/eWF26TPhxAy62VC7vGa5cSo95TrU8thGTJqgBwU-fMK9RGlt3-dZRBHodhCUj0zm',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Mon Jun 11 2018 20:56:11 GMT+0900 (대한민국 표준시)
+[debug] [2018-06-11T11:56:11.952Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-11T11:56:11.958Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/cap2018-290a0  
+  
+ Mon Jun 11 2018 20:56:11 GMT+0900 (대한민국 표준시)
+[debug] [2018-06-11T11:56:13.011Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-11T11:56:13.012Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/cap2018-290a0/tokens  
+  
+ Mon Jun 11 2018 20:56:13 GMT+0900 (대한민국 표준시)
+[debug] [2018-06-11T11:56:13.661Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-11T11:56:13.662Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/cap2018-290a0  
+  
+ Mon Jun 11 2018 20:56:13 GMT+0900 (대한민국 표준시)
+[debug] [2018-06-11T11:56:14.787Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\user\dev\cap'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-06-11T11:56:18.518Z] Fetching environment
+[debug] [2018-06-11T11:56:18.522Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/609997833933:getServerAppConfig  
+  
+ Mon Jun 11 2018 20:56:18 GMT+0900 (대한민국 표준시)
+[debug] [2018-06-11T11:56:18.523Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/609997833933/clients/_:getWebAppConfig  
+  
+ Mon Jun 11 2018 20:56:18 GMT+0900 (대한민국 표준시)
+[debug] [2018-06-11T11:56:19.516Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-11T11:56:19.516Z] Starting @google-cloud/functions-emulator
+[debug] [2018-06-11T11:56:19.532Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[debug] [2018-06-11T11:56:22.599Z] Parsing function triggers
+[info] i  functions: No HTTPS functions found. Use firebase functions:shell if you would like to emulate other types of functions.
