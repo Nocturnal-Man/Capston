@@ -4,13 +4,13 @@ var chart = AmCharts.makeChart("chartdiv", {
     "marginRight": 40,
     "marginLeft": 40,
     "autoMarginOffset": 20,
-    "mouseWheelZoomEnabled":true,
+    "mouseWheelZoomEnabled": true,
     "dataDateFormat": "YYYY-MM-DD",
     "valueAxes": [{
         "id": "v1",
         "axisAlpha": 0,
         "position": "left",
-        "ignoreAxisWidth":true
+        "ignoreAxisWidth": true
     }],
     "balloon": {
         "borderThickness": 1,
@@ -18,10 +18,10 @@ var chart = AmCharts.makeChart("chartdiv", {
     },
     "graphs": [{
         "id": "g1",
-        "balloon":{
-          "drop":true,
-          "adjustBorderColor":false,
-          "color":"#ffffff"
+        "balloon": {
+            "drop": true,
+            "adjustBorderColor": false,
+            "color": "#ffffff"
         },
         "bullet": "round",
         "bulletBorderAlpha": 1,
@@ -36,8 +36,8 @@ var chart = AmCharts.makeChart("chartdiv", {
     }],
     "chartScrollbar": {
         "graph": "g1",
-        "oppositeAxis":false,
-        "offset":30,
+        "oppositeAxis": false,
+        "offset": 30,
         "scrollbarHeight": 80,
         "backgroundAlpha": 0,
         "selectedBackgroundAlpha": 0.1,
@@ -46,23 +46,23 @@ var chart = AmCharts.makeChart("chartdiv", {
         "graphLineAlpha": 0.5,
         "selectedGraphFillAlpha": 0,
         "selectedGraphLineAlpha": 1,
-        "autoGridCount":true,
-        "color":"#AAAAAA"
+        "autoGridCount": true,
+        "color": "#AAAAAA"
     },
     "chartCursor": {
         "pan": true,
         "valueLineEnabled": true,
         "valueLineBalloonEnabled": true,
-        "cursorAlpha":1,
-        "cursorColor":"#258cbb",
-        "limitToGraph":"g1",
-        "valueLineAlpha":0.2,
-        "valueZoomable":true
+        "cursorAlpha": 1,
+        "cursorColor": "#258cbb",
+        "limitToGraph": "g1",
+        "valueLineAlpha": 0.2,
+        "valueZoomable": true
     },
-    "valueScrollbar":{
-      "oppositeAxis":false,
-      "offset":50,
-      "scrollbarHeight":10
+    "valueScrollbar": {
+        "oppositeAxis": false,
+        "offset": 50,
+        "scrollbarHeight": 10
     },
     "categoryField": "date",
     "categoryAxis": {
@@ -648,58 +648,49 @@ function zoomChart() {
     chart.zoomToIndexes(chart.dataProvider.length - 40, chart.dataProvider.length - 1);
 }
 
+
+var a2 = firebase.database().ref('GHM').on('value');
 var a = 30;
 
 var chart1 = AmCharts.makeChart("chartdiv1", {
-  "theme": "light",
-  "type": "gauge",
-  "axes": [{
-    "topTextFontSize": 20,
-    "topTextYOffset": 70,
-    "axisColor": "#31d6ea",
-    "axisThickness": 1,
-    "endValue": 100,
-    "gridInside": true,
-    "inside": true,
-    "radius": "50%",
-    "valueInterval": 10,
-    "tickColor": "#67b7dc",
-    "startAngle": -90,
-    "endAngle": 90,
-    "unit": "%",
-    "bandOutlineAlpha": 0,
-    "bands": [{
-      "color": "#0080ff",
-      "endValue": 100,
-      "innerRadius": "105%",
-      "radius": "170%",
-      "gradientRatio": [0.5, 0, -0.5],
-      "startValue": 0
+    "theme": "light",
+    "type": "gauge",
+    "axes": [{
+        "topTextFontSize": 20,
+        "topTextYOffset": 70,
+        "axisColor": "#31d6ea",
+        "axisThickness": 1,
+        "endValue": 100,
+        "gridInside": true,
+        "inside": true,
+        "radius": "50%",
+        "valueInterval": 10,
+        "tickColor": "#67b7dc",
+        "startAngle": -90,
+        "endAngle": 90,
+        "unit": "%",
+        "bandOutlineAlpha": 0,
+        "bands": [{
+            "color": "#0080ff",
+            "endValue": 100,
+            "innerRadius": "105%",
+            "radius": "170%",
+            "gradientRatio": [0.5, 0, -0.5],
+            "startValue": 0
     }, {
-      "color": "#3cd3a3",
-      "endValue": 0,
-      "innerRadius": "105%",
-      "radius": "170%",
-      "gradientRatio": [0.5, 0, -0.5],
-      "startValue": 0
+            "color": "#3cd3a3",
+            "endValue": 0,
+            "innerRadius": "105%",
+            "radius": "170%",
+            "gradientRatio": [0.5, 0, -0.5],
+            "startValue": 0
     }]
   }],
-  "arrows": [{
-    "value":a,
-    "alpha": 1,
-    "innerRadius": "35%",
-    "nailRadius": 0,
-    "radius": "170%"
+    "arrows": [{
+        "value": a2,
+        "alpha": 1,
+        "innerRadius": "35%",
+        "nailRadius": 0,
+        "radius": "170%"
   }]
 });
-
-setInterval(randomValue, 2000);
-
-// set random value
-function randomValue() {
-  var value = Math.round(Math.random() * 100);
-  chart.arrows[0].setValue(value);
-  chart.axes[0].setTopText(value + " %");
-  // adjust darker band to new value
-  chart.axes[0].bands[1].setEndValue(value);
-}
