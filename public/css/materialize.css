@@ -77,6 +77,18 @@
     padding-right: 10px;
 
 }
+.eqip_box_style{
+    margin-top: 1px;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 50px;
+    border-color: aqua;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
 #uploader{
     -webkit-appearance: none;
     appearance:none;

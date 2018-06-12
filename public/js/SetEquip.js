@@ -14,6 +14,7 @@ function generateChartData() {
         });
     }
 }
+
 var chartData = generateChartData();
 
 var chart = AmCharts.makeChart("chartdiv", {

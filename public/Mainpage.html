@@ -77,21 +77,20 @@
 
 
                 <!-- HTML -->
-                <div>
-                    <p class="center">땅습도</p>
-                </div>
-                <div id="chartdiv1"></div>
+                <div class="eqip_box_style">
+                    <p class="center" style="font-size: 23px;">땅습도</p>
+                    <div id="chartdiv1"></div>
+                </div><br><br>
+
 
                 <div class="row center">
-                    <a class="btn-large waves-effect waves-light btn-my">수문 open</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a class="btn-large waves-effect waves-light btn-my">수문 Close</a>
+                    <div class="row center"><a id="BTN_OPEN" class="btn-large btn-my" style="float: left;margin-left: 50%;">수문 Open</a><div id="open_check" style="margin-left: 20px; border: solid; width: 50px; height: 50px; border-radius: 100%; border-color: black; padding-top: 10px;border-width: 5px;float: left">확인</div>
+                    </div>
+                    <div class="row center"><a id="BTN_CLOSE" class="btn-large  btn-my" style="float: left;margin-left: 50%">수문 Close</a>
+                    <div id="close_check" style="margin-left: 20px; border: solid; width: 50px; height: 50px; border-radius: 100%; border-color: black; padding-top: 10px;border-width: 5px;float: left">확인</div>
+                    </div>
                 </div>
                 <br><br>
-                <div>
-                    <p class="center">대기습도</p>
-                </div>
-                <div id="chartdiv"></div>
-
             </div>
         </div>
     </div>
@@ -156,6 +155,7 @@
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
     <script src="js/SetEquip.js"></script>
+    <script src="js/open_and_close.js"></script>
     <script type="text/javascript">
         $('.button-collapse').sideNav();
         $(".dropdown-button").dropdown();
